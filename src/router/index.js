@@ -21,17 +21,7 @@ import Layout from '../views/layout/Layout'
     icon: 'svg-name'             the icon show in the sidebar,
   }
 **/
-export const constantRoutes = [{
-    path: '/login',
-    component: () => import('@/views/login/index'),
-    // component: () => import('@/views/dashboard/index'),
-    hidden: true
-  },
-  {
-    path: '/404',
-    component: () => import('@/views/404'),
-    hidden: true
-  },
+export const constantRoutes = [
 
   // 首页
   {
@@ -47,6 +37,17 @@ export const constantRoutes = [{
         icon: 'example'
       }
     }]
+  },
+  {
+    path: '/login',
+    component: () => import('@/views/login/index'),
+    // component: () => import('@/views/dashboard/index'),
+    hidden: true
+  },
+  {
+    path: '/404',
+    component: () => import('@/views/404'),
+    hidden: true
   },
   {
     path: '/data',
